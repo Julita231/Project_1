@@ -29,20 +29,14 @@
   font-size: 18px;
   font-weight: 400;
 }
-.menu a:link {
-  color: #f1f1f1;
-  text-decoration: none;
-}
 
-.menu a:visited {
-  color: #f1f1f1;
-  text-decoration: none;
-}
-
+.menu a:link,
+.menu a:visited,
 .menu a:active {
   color: #f1f1f1;
   text-decoration: none;
 }
+
 .menu-item {
   display: inline-block;
   margin-left: 40px;
@@ -58,7 +52,7 @@
   background: url(https://fastly.picsum.photos/id/905/1920/1080.jpg?hmac=Tcjfgfdgcrftjt_EnNyT_i-mn_NRYsETpdQx0-GGWDY);
 }
 
-.herocontent {
+.hero-content {
   position: relative;
   z-index: 1;
 }
@@ -71,14 +65,15 @@
   left: 0;
 }
 
-.herocontent h1 {
+.hero-content h1 {
+  width: 65%;
   margin-bottom: 30px;
   color: #fff;
   font-size: 36px;
   font-weight: 700;
 }
 
-.herocontent p {
+.hero-content p {
   margin-bottom: 30px;
   color: #fff;
   font-size: 18px;
@@ -139,23 +134,29 @@
   font-size: 36px;
   font-weight: 700;
 }
-.pplname {
+
+.people-description {
+  font-size: 18px;
+}
+.ppl-name {
   margin-bottom: 20px;
   font-weight: 700;
+  font-size: 18px;
 }
 
 .people:nth-of-type(even) {
   flex-direction: row-reverse;
 }
-.people:nth-of-type(even) .peopledescribtion {
+.people:nth-of-type(even) .people-description {
   text-align: right;
 }
 
 .offer {
   background: #405d78;
+  padding-bottom: 20px;
 }
 
-.offertitle {
+.offer-title {
   color: #fff;
   font-family: Roboto;
   font-size: 36px;
@@ -168,16 +169,24 @@
   flex-wrap: wrap;
   gap: 60px;
   justify-content: space-around;
+  padding-left: 175px;
+  padding-right: 50px;
 }
 .box-item {
   width: 200px;
   height: 200px;
+  font-size: 24px;
   background: #f1f1f1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: 0.5s;
+}
+
+.box-item:hover {
+  scale: 1.05;
 }
 
 .new::before {
@@ -191,11 +200,28 @@
   border-radius: 50%;
 }
 
+.new-item {
+  font-size: 18px;
+}
+
+.container-footer {
+  width: 1280px;
+  margin: 0 auto;
+}
 .footer {
+  height: 71px;
   background: #4e4e4e;
   justify-content: space-around;
   color: #fff;
   font-size: 18px;
+}
+
+.footer-flex {
+  display: flex;
+  height: 100%;
+  padding-bottom: 25px;
+  justify-content: space-between;
+  padding-top: 25px;
 }
 
 .copyright {
