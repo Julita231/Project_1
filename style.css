@@ -87,23 +87,19 @@
   border: 3px solid #fff;
   background: rgba(196, 196, 196, 0);
   transition: 1s;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn:hover {
   background: white;
   color: black;
   border: 3px solid #fff;
-}
-
-.btn a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.btn:hover a {
-  color: black;
   text-decoration: none;
 }
 
