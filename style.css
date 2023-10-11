@@ -149,7 +149,6 @@
 
 .offer {
   background: #405d78;
-  padding-bottom: 20px;
 }
 
 .offer-title {
@@ -201,7 +200,7 @@
 }
 
 .container-footer {
-  width: 1280px;
+  width: 960px;
   margin: 0 auto;
 }
 .footer {
@@ -217,6 +216,7 @@
   height: 100%;
   padding-bottom: 25px;
   justify-content: space-between;
+  align-items: center;
   padding-top: 25px;
 }
 
